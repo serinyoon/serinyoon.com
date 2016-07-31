@@ -1,25 +1,36 @@
 <html>
 <head>
-    <title>Serin Yoon</title>
-    <link rel="stylesheet" type="text/css" href="./style.css"></link>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="./script.js"></script>
+  <title>Serin Yoon</title>
+  <link rel="stylesheet" type="text/css" href="./style.css"></link>
 </head>
 <body>
-<div class="bio">
-<span class="hello"></span>,<br>
-MY NAME IS <span class="name"></span>. I'M A FOURTH YEAR <span class="major"></span> STUDENT AT THE <span class="school"></span>, EXPECTED TO GRADUATE IN <span class="month"></span>, <span class="year"></span>. <br>
-I AM ACTIVELY LOOKING FOR A FULL TIME POSITION WITH SPECIAL INTEREST IN <span class="web"></span> AND <span class="ui"></span>. <br>
-IF YOU'D LIKE TO GET TO KNOW ME BETTER, EXPLORE THE FOLLOWING LINKS: <br>
-<ul>
-  <li><a href="https://www.linkedin.com/in/serinyoon" target="_blank"><span class="linkedin"></span></a></li>
-  <li><a href="https://github.com/serinyoon" target="_blank"><span class="github"></span></a></li>
-  <li><a href="https://codepen.io/serinyoon" target="_blank"><span class="codepen"></span></a></li>
-</ul>
 
-THANKS FOR VISITING!
+<div class="star">*</div>
+
+<div class="bio">
+  <div class="name">Serin Yoon</div>
+  <div class="title">Software Engineer</div>
+  <div class"company">at LinkedIn</div>
 </div>
+
+<div class="links">
+  <ul>
+    <li><a href="https://www.linkedin.com/in/serinyoon" target="_blank">Linkedin</a></li>
+    <li><a href="https://github.com/serinyoon" target="_blank">Github</a></li>
+    <li><a href="https://codepen.io/serinyoon" target="_blank">Codepen</a></li>
+  </ul>
+</div>
+
+<div class="message">Thanks for visiting!</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script>
+  (function(){
+    var colors = ["#E1EBF5", "#F0E5EB", "#FCDFD7", "#D4ECDC", "#FCF9DA", "#EEF2F5"];
+    $(".star").css("color", colors[parseInt(Math.random()*10%colors.length)]);
+
+  })();
+  
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -27,7 +38,7 @@ THANKS FOR VISITING!
 
   ga('create', 'UA-55217126-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
 </body>
 </html>

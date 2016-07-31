@@ -1,38 +1,52 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Sans+Mono);
+@import url(https://fonts.googleapis.com/css?family=Lato:300italic,300);
+
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-  padding: 50px 0;
   margin: 0 auto;
-  max-width: 700px;
-  font-family: 'Droid Sans Mono';
+  padding: 200px 0;
+  width: 700px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  text-transform: lowercase;
+}
+
+.star {
+  font-size: 50px;
 }
 
 .bio {
-  letter-spacing: 5px;
-  line-height: 40px;
+  margin-bottom: 30px;
 }
 
-span {
-  color: #ef4130;
-  font-size: 20px;
-
-  &:nth-child(4), &:nth-child(5) {
-    color: #208193;
-  }
+.name {
+  font-size: 25px;
+  padding-bottom: 5px;
 }
 
-li span {
-  color: #208193;
+.message {
+  margin-top: 60px;
+  font-style: italic;
 }
 
 ul {
   list-style: none;
 }
 
-a {
+a, a:visited {
+  color: #AAA;
   text-decoration: none;
 }
 
-a span:hover {
-  color: #035463;
+a:hover {
+  color: #000000;
+}
+
+@media (min-width: 480px) {
+  body {
+    width: 100%;
+  }
 }
